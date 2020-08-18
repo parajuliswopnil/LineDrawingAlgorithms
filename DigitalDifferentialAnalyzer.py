@@ -56,7 +56,6 @@ for i in range(len(coordinateList) - 2):
 # updates the drawing surface
 pygame.display.update()
 
-# to explicitly end the program
 while True:
     for event in pygame.event.get():
         if event.type == QUIT:
