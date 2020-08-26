@@ -45,15 +45,16 @@ print(coordinateList)
 
 drawingSurface = pygame.display.set_mode((900, 900))
 drawingSurface.fill(colorWhite)
-pygame.display.set_caption("Bresenham's Line Drawing Algorithm")
+pygame.display.set_caption("Midpoint Line Drawing Algorithm")
 
 for i in range(len(coordinateList) - 2):
     for j in range(len(coordinateList) - 1):
         pygame.draw.line(drawingSurface, colorBlack, coordinateList[i], coordinateList[j], 2)
 
+# updates the drawing surface
 pygame.display.update()
 
-
+# explicitly ending the program
 while True:
     for event in pygame.event.get():
         if event.type == QUIT:

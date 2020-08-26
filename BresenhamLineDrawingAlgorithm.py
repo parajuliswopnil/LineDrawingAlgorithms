@@ -66,8 +66,10 @@ for i in range(len(coordinateList) - 2):
     for j in range(len(coordinateList) - 1):
         pygame.draw.line(drawingSurface, colorBlack, coordinateList[i], coordinateList[j], 2)
 
+# updates the drawing surface
 pygame.display.update()
 
+# explicitly ending the program
 while True:
     for event in pygame.event.get():
         if event.type == QUIT:
